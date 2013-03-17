@@ -1,0 +1,53 @@
+HOWTO
+
+git
+
+	clone linux-next
+	create your own branch off of the HEAD
+	work on that
+
+checkpatch
+	./scripts/checkpatch.pl  (empty for help)
+	--terse
+	--file
+
+pick a file
+	drivers/staging/
+
+	checkpatch comedi file
+
+show errors vs warnings
+
+coding style
+	why?
+	what is it?
+	80 columns
+	tabs
+	brace placement
+	* placement
+	Documentation/CodingStyle
+
+
+edit the file
+
+change the line, run checkpatch.
+
+git diff
+
+git commit
+
+Good changelog comment
+
+signed-off-by:
+	what it is
+
+git show
+	--pretty=email
+
+git format-patch
+
+git send-email
+	--smtp-server /usr/bin/msmtp
+
+	git config --global sendemail.smtpserver /usr/bin/msmtp
+
